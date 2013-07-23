@@ -1,0 +1,106 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="679dp"
+    tools:context=".MainActivity" >
+    
+     <EditText
+         android:id="@+id/spent_by_parti"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/exp_amt"
+         android:layout_marginTop="10dp"
+         android:ems="10"
+         android:maxLength="50"
+         android:hint="Spent By Participant" />
+     
+        <EditText
+        android:id="@+id/place_spent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spent_by_parti"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:maxLength="50"
+        android:hint="Place Spent" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/add"
+            android:layout_alignBottom="@+id/add"
+            android:layout_alignRight="@+id/place_spent"
+            android:layout_marginTop="10dp"
+            android:text="CLEAR" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/exp_shared"
+            android:layout_below="@+id/exp_shared"
+             android:layout_marginTop="10dp"
+            android:text="ADD" />
+
+        <CheckBox
+            android:id="@+id/exp_shared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/place_spent"
+            android:text="Shared" />
+
+        <EditText
+            android:id="@+id/exp_amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/datetext"
+            android:ems="10"
+            android:maxLength="50"
+            android:hint="Amount"
+            android:inputType="numberDecimal" />
+
+
+       <EditText
+           android:id="@+id/datetext"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/name"
+           android:layout_marginTop="4dp"
+           android:ems="10"
+           android:inputType="none"
+           android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/addlable"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:maxLength="50"
+            android:hint="Name/Description"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/addlable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/exp_shared"
+            android:text="Add Expense"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+</RelativeLayout>
+</ScrollView>

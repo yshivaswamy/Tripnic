@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TripNic</string>
+    <string name="action_bar_edit">Edit</string>
+    <string name="action_bar_add">Add</string>
+    <string name="action_bar_search">Search</string>
+    <string name="action_bar_delete">Delete</string>
+    <string name="menu_settings">Menu</string>
+    <string name="add_par">add_par</string> 
+</resources>

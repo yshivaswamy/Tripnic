@@ -1,0 +1,97 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent" 
+     android:layout_height="wrap_content">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="499dp"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/activityname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Name" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/activitydescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activityname"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="Description" />
+
+    <EditText
+        android:id="@+id/activityduration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activitydescription"
+        android:layout_below="@+id/activitydescription"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Duration" />
+
+    <EditText
+        android:id="@+id/placeofactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activityduration"
+        android:layout_below="@+id/activityduration"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="PlaceOfActivity" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/placeofactivity"
+        android:layout_below="@+id/placeofactivity"
+        android:layout_marginTop="60dp"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/add"
+        android:layout_alignBottom="@+id/add"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="52dp"
+        android:text="Cancel" />
+
+    <EditText
+           android:id="@+id/date"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/placeofactivity"
+           android:layout_marginTop="4dp"
+           android:ems="10"
+           android:inputType="none"
+           android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    
+
+    <Button
+        android:id="@+id/media"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/add"
+        android:layout_alignBottom="@+id/add"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/add"
+        android:text="Media" />
+
+</RelativeLayout>
+
+</ScrollView>

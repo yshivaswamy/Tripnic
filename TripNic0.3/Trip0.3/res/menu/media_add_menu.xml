@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/new_image"
+          android:icon="@drawable/image_capture"
+          android:showAsAction="always"/>
+		  
+    <item android:id="@+id/new_audio"
+          android:icon="@drawable/audio_record"
+          android:showAsAction="always"/>
+    
+    <item android:id="@+id/new_video"
+          android:icon="@drawable/video_record"
+          android:showAsAction="always"/>
+</menu>

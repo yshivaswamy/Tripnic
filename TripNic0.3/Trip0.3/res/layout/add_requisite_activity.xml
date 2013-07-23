@@ -1,0 +1,128 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="340dp"
+    android:layout_height="472dp"
+    tools:context=".MainActivity" >
+    
+     <EditText
+        android:id="@+id/itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/requisitemanager"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:maxLength="50"
+        android:hint="ItemName" >
+         </EditText>
+        
+     <requestFocus />
+    
+      <EditText
+        android:id="@+id/itemtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemname"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:maxLength="50"
+        android:hint="ItemType" />
+      
+       <TextView
+           android:id="@+id/ismanditory"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/date"
+           android:layout_below="@+id/itemtype"
+           android:layout_marginTop="28dp"
+           android:layout_toLeftOf="@+id/Myes"
+           android:text="Ismanditory"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+       <CheckBox
+             android:id="@+id/Myes"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/ismanditory"
+             android:layout_alignBottom="@+id/ismanditory"
+             android:layout_alignRight="@+id/itemtype"
+             android:text="YES" />
+ 
+ 
+    <TextView
+        android:id="@+id/requisitepending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ismanditory"
+        android:layout_marginTop="17dp"
+        android:text="RequisitePending"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+     <CheckBox
+         android:id="@+id/Ryes"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/requisitepending"
+         android:layout_alignBottom="@+id/requisitepending"
+         android:layout_alignLeft="@+id/Myes"
+         android:text="YES" />
+
+       <EditText
+           android:id="@+id/participantname"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/Ryes"
+           android:layout_marginTop="24dp"
+           android:ems="10"
+           android:maxLength="20"
+           android:hint="Participant_Name" />
+
+           
+       
+
+        <EditText
+           android:id="@+id/date"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/participantname"
+           android:layout_marginTop="4dp"
+           android:ems="10"
+           android:inputType="none"
+           android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    
+     <Button
+         android:id="@+id/add"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignRight="@+id/requisitepending"
+         android:text="ADD" />
+     
+      <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/add"
+        android:text="CANCEL" />
+
+
+      <TextView
+          android:id="@+id/requisitemanager"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/add"
+          android:layout_alignParentTop="true"
+          android:text="ADD REQUISITE" />
+    
+</RelativeLayout>
+
+</ScrollView>

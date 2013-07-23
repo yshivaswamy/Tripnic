@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+   
+  
+   <TextView  android:id="@+id/participantname"
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentTop="true"
+              android:text="participantname   :"
+              android:textAppearance="?android:attr/textAppearanceSmall"/>
+   
+    <TextView
+       android:id="@+id/emailId"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/participantname"
+       android:text="emailId   :"
+       android:textAppearance="?android:attr/textAppearanceSmall" />
+
+   <TextView
+       android:id="@+id/mobilenumber"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/emailId"
+       android:text="mobilenumber   :"
+       android:textAppearance="?android:attr/textAppearanceSmall" />
+   
+   <TextView
+       android:id="@+id/address"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/mobilenumber"
+       android:text="address   :"
+       android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+       android:id="@+id/dob"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/address"
+       android:text="dob   :"
+       android:textAppearance="?android:attr/textAppearanceSmall" />
+       
+</RelativeLayout>

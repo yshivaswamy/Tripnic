@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+  
+     <TextView android:id="@+id/itemname"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@+id/itemname"/>
+    
+    
+
+     <TextView
+         android:id="@+id/itemname"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:text="ItemName     :"
+         android:textAppearance="?android:attr/textAppearanceSmall" />
+     
+ 
+    
+     <TextView
+         android:id="@+id/itemtype"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/itemname"
+         android:text="ItemType       :"
+         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+      <TextView
+          android:id="@+id/Participantid"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/itemtype"
+          android:text="ParticipantID :"
+          android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

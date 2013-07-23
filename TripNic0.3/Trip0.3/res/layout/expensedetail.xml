@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView android:id="@+id/MyText"
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:layout_toRightOf="@+id/detaildescription"/>
+    
+
+    <TextView
+        android:id="@+id/detaildescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Place Description   :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:id="@+id/detailamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+         android:layout_below="@+id/detaildescription"
+        android:text="Amountspent   :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+     <TextView
+        android:id="@+id/detailplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/detailamount"
+        android:text="PlaceSpent     :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+     
+      <TextView
+        android:id="@+id/detailname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/detailplace"
+        android:text="ParticipantName :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+         
+   
+</RelativeLayout>
