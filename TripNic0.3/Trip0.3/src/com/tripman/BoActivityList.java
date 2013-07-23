@@ -126,4 +126,5 @@ public class BoActivityList extends Activity
 			}
 		});	
    }
+  
 }
